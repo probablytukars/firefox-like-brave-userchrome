@@ -57,6 +57,7 @@ menu[id$="_stylebot-contextmenu"],
 menuitem[id$="_uBlock0-blockElement"],
 menugroup#context-navigation
 {display: none;}
+menupopup#contentAreaContextMenu {min-width:250px !important;}
 menupopup > menu, menupopup > menuitem {
 	height: 24px;
 	/*font-height: 9px*/
