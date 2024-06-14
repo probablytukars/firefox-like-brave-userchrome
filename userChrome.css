@@ -1,0 +1,101 @@
+toolbox#navigator-toolbox {
+	border-bottom: 0px !important;
+	background-color: #0d0f14 !important;
+}
+toolbar#nav-bar {
+	background-color: #21272a !important;
+	margin-bottom: -2px;
+}
+toolbaritem#urlbar-container {--toolbar-field-focus-border-color: #2D2D76 !important;}
+hbox#urlbar {--arrowpanel-border-color: #0000 !important;}
+toolbar#PersonalToolbar {background-color: #21272a !important;}
+/*+4px to bookmars*/
+hbox#PlacesToolbar {margin-bottom: 3px;}
+toolbarbutton.bookmark-item {
+	padding: 6px !important;
+	max-width: 12em !important;
+}
+toolbarbutton.bookmark-item image {margin-inline-end: 6px !important;}
+
+hbox#urlbar-background {background-color: #0d0f14 !important;}
+tabs#tabbrowser-tabs {
+	border-inline-start: 0px !important;
+	height: 40px;
+}
+tab hbox.tab-content {height: 40px;}
+hbox#tabbrowser-arrowscrollbox-periphery {height: 40px;}
+toolbarbutton#tabs-newtab-button {
+	height: 32px !important;
+	width: 32px !important;
+	margin-top: 4px !important;
+	margin-left: 4px !important;
+}
+toolbarbutton#tabs-newtab-button image {
+	box-sizing: content-box !important;
+	width: 16px !important;
+	height: 16px !important;
+	padding: 8px !important;
+}
+
+tab[selected="true"] vbox.tab-background {
+	background-color: #30393d !important;
+}
+tab vbox.tab-background {
+	height: 32px !important;
+	min-height: 32px !important;
+}
+menu#context-openlinkinusercontext-menu,
+menuitem#context-bookmarklink, 
+menuitem#context-savelink,
+menuitem#context-savelinktopocket,
+menuitem#context-sendlinktodevice,
+menuitem#context-sendimage,
+menuitem#context-setDesktopBackground,
+menuitem#context-inspect-a11y,
+menuitem[id$="_cb_bug_report"],
+menu[id$="_stylebot-contextmenu"],
+menuitem[id$="_uBlock0-blockElement"],
+menugroup#context-navigation
+{display: none;}
+menupopup > menu, menupopup > menuitem {
+	height: 24px;
+	/*font-height: 9px*/
+}
+
+menuitem:hover, menu:hover {
+	background-color: #3f4042 !important; 
+	color: #e8eaed;
+}
+
+menu[_moz-menuactive="true"]:not([disabled]) {
+	background-color: #3f4042 !important; 
+	color: #e8eaed;
+}
+
+menupopup {
+  --panel-border-radius: 8px !important;
+  --panel-border-color: #0000 !important;
+  --panel-background: #292a2d !important;
+  --panel-shadow: 0 0 var(--panel-shadow-margin) hsla(0,0%,0%,.4) !important;
+  --panel-color: #e8eaed !important;
+  
+}
+
+/*
+menu:where([_moz-menuactive]:not([disabled="true"])), menuitem:where([_moz-menuactive]:not([disabled="true"])) {
+	background-color: #f00;
+}
+*/
+
+menuseparator::before {
+	border-top: 1px solid #3c4043 !important;
+}
+
+hbox.titlebar-spacer {display: none;}
+toolbarbutton#firefox-view-button,
+toolbarbutton#alltabs-button
+{display: none;}
+
+hbox.search-one-offs {display: none !important;}
+
+.urlbarView-body-inner {border-top: none !important;}
