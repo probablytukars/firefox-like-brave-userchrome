@@ -44,19 +44,39 @@ tab vbox.tab-background {
 	height: 32px !important;
 	min-height: 32px !important;
 }
+
+menugroup#context-navigation,
+menuseparator#context-sep-navigation,
 menu#context-openlinkinusercontext-menu,
+menuitem#context-savelinktopocket,
 menuitem#context-bookmarklink, 
 menuitem#context-savelink,
-menuitem#context-savelinktopocket,
-menuitem#context-sendlinktodevice,
 menuitem#context-sendimage,
+menuitem#context-stripOnShareLink,
+menu#context-sendlinktodevice,
 menuitem#context-setDesktopBackground,
-menuitem#context-inspect-a11y,
-menuitem[id$="_cb_bug_report"],
-menu[id$="_stylebot-contextmenu"],
-menuitem[id$="_uBlock0-blockElement"],
-menugroup#context-navigation
-{display: none;}
+menuseparator#context-sep-setbackground,
+menuitem#context_pinTab,
+menuitem#context_duplicateTabs + menuseparator,
+menuitem#context_bookmarkTab,
+menu#context_moveTabOptions,
+menu#context_sendTabToDevice,
+menuitem.share-tab-url-item,
+menu#context_reopenInContainer,
+menuitem#context_selectAllTabs,
+menuitem#context_selectAllTabs + menuseparator,
+menuitem#context-savepage,
+menuitem#context-pocket,
+menu#context-sendpagetodevice,
+menuitem#context-take-screenshot,
+menuseparator#context-sep-screenshots,
+menuitem#context-viewsource,
+menuitem#context_closeTab,
+menuitem#context_closeDuplicateTabs,
+menu#context_closeTabOptions,
+menuitem#context_undoCloseTab,
+menuitem#context-inspect-a11y
+{display: none !important;}
 menupopup#contentAreaContextMenu {min-width:250px !important;}
 menupopup > menu, menupopup > menuitem {
 	height: 24px;
@@ -82,17 +102,11 @@ menupopup {
   
 }
 
-/*
-menu:where([_moz-menuactive]:not([disabled="true"])), menuitem:where([_moz-menuactive]:not([disabled="true"])) {
-	background-color: #f00;
-}
-*/
-
 menuseparator::before {
 	border-top: 1px solid #3c4043 !important;
 }
 
-hbox.titlebar-spacer {display: none;}
+
 toolbarbutton#firefox-view-button,
 toolbarbutton#alltabs-button
 {display: none;}
