@@ -22,6 +22,7 @@ tabs#tabbrowser-tabs {
 	border-inline-start: 0px !important;
 	height: 40px;
 }
+tabs#tabbrowser-tabs[movingtab] {margin-bottom:0px !important; padding-bottom:0px !important; }
 tab hbox.tab-content {height: 40px;}
 hbox#tabbrowser-arrowscrollbox-periphery {height: 40px;}
 toolbarbutton#tabs-newtab-button {
@@ -75,20 +76,19 @@ menuitem#context_closeTab,
 menuitem#context_closeDuplicateTabs,
 menu#context_closeTabOptions,
 menuitem#context_undoCloseTab,
-menuitem#context-inspect-a11y
+menuitem#context-inspect-a11y,
+toolbarbutton#firefox-view-button,
+toolbarbutton#alltabs-button,
+hbox.search-one-offs
 {display: none !important;}
+
 menupopup#contentAreaContextMenu {min-width:250px !important;}
 menupopup > menu, menupopup > menuitem {
 	height: 24px;
 	/*font-height: 9px*/
 }
 
-menuitem:hover, menu:hover {
-	background-color: #3f4042 !important; 
-	color: #e8eaed;
-}
-
-menu[_moz-menuactive="true"]:not([disabled]) {
+menuitem:hover, menu:hover, menu[_moz-menuactive="true"]:not([disabled]) {
 	background-color: #3f4042 !important; 
 	color: #e8eaed;
 }
@@ -106,11 +106,9 @@ menuseparator::before {
 	border-top: 1px solid #3c4043 !important;
 }
 
-
-toolbarbutton#firefox-view-button,
-toolbarbutton#alltabs-button
-{display: none;}
-
-hbox.search-one-offs {display: none !important;}
-
 .urlbarView-body-inner {border-top: none !important;}
+
+#editBMPanel_locationField, .editBMPanel_locationRow, #editBMPanel_keywordRow, .editBMPanel_keywordField {
+  visibility: visible !important;
+  display: block !important;
+}
